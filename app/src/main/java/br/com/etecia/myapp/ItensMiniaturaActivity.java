@@ -1,6 +1,8 @@
 package br.com.etecia.myapp;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -8,7 +10,11 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.google.android.material.appbar.MaterialToolbar;
+
 public class ItensMiniaturaActivity extends AppCompatActivity {
+
+   MaterialToolbar idTooBarItens;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,5 +26,13 @@ public class ItensMiniaturaActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        idTooBarItens = findViewById(R.id.idTooBarItens);
+        idTooBarItens.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(),MenuPrincipalActivity.class));
+            }
+        });
+
     }
 }
