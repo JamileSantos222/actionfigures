@@ -19,7 +19,7 @@ public class ItensMiniaturaActivity extends AppCompatActivity {
     ViewPager2 idViewPagerItensMiniatura;
     TabLayout idTabLayoutItensMiniatura;
 
-   MaterialToolbar idTooBarItens;
+    MaterialToolbar idTooBarItens;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,11 +38,30 @@ public class ItensMiniaturaActivity extends AppCompatActivity {
         idTooBarItens.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(),MenuPrincipalActivity.class));
+                startActivity(new Intent(getApplicationContext(), MenuPrincipalActivity.class));
             }
         });
 
+        AdapterItensMiniatura adapterItensMiniatura = new AdapterItensMiniatura(this);
 
+        idViewPagerItensMiniatura.setAdapter(adapterItensMiniatura);
+        idTabLayoutItensMiniatura.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
+            @Override
+            public void onTabSelected(TabLayout.Tab tab) {
+                idViewPagerItensMiniatura.setCurrentItem(tab.getPosition());
+
+            }
+
+            @Override
+            public void onTabUnselected(TabLayout.Tab tab) {
+
+            }
+
+            @Override
+            public void onTabReselected(TabLayout.Tab tab) {
+
+            }
+        });
 
     }
 }
