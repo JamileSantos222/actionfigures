@@ -9,10 +9,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import androidx.viewpager2.widget.ViewPager2;
 
 import com.google.android.material.appbar.MaterialToolbar;
+import com.google.android.material.tabs.TabLayout;
 
 public class ItensMiniaturaActivity extends AppCompatActivity {
+
+    ViewPager2 idViewPagerItensMiniatura;
+    TabLayout idTabLayoutItensMiniatura;
 
    MaterialToolbar idTooBarItens;
 
@@ -27,12 +32,17 @@ public class ItensMiniaturaActivity extends AppCompatActivity {
             return insets;
         });
         idTooBarItens = findViewById(R.id.idTooBarItens);
+        idViewPagerItensMiniatura = findViewById(R.id.idViewPagerItensMiniatura);
+        idTabLayoutItensMiniatura = findViewById(R.id.idTabLayoutItensMin);
+
         idTooBarItens.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getApplicationContext(),MenuPrincipalActivity.class));
             }
         });
+
+
 
     }
 }
