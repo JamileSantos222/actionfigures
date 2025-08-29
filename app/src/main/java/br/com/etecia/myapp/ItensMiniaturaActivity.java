@@ -62,6 +62,13 @@ public class ItensMiniaturaActivity extends AppCompatActivity {
 
             }
         });
+        idViewPagerItensMiniatura.registerOnPageChangeCallback(new ViewPager2.OnPageChangeCallback() {
+            @Override
+            public void onPageSelected(int position) {
+                super.onPageSelected(position);
+                idTabLayoutItensMiniatura.getTabAt(position).select();
+            }
+        });
 
     }
 }
