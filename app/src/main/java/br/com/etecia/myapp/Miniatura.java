@@ -2,7 +2,12 @@ package br.com.etecia.myapp;
 
 public class Miniatura {
     private int imgMiniatura;
-    private String títuloMiniatura;
+    private String tituloMiniatura;
+
+    public Miniatura(int imgMiniatura, String tituloMiniatura) {
+        this.imgMiniatura = imgMiniatura;
+        this.tituloMiniatura = tituloMiniatura;
+    }
 
     public int getImgMiniatura() {
         return imgMiniatura;
@@ -12,17 +17,11 @@ public class Miniatura {
         this.imgMiniatura = imgMiniatura;
     }
 
-    public String getTítuloMiniatura() {
-        return títuloMiniatura;
+    public String getTituloMiniatura() {
+        return tituloMiniatura;
     }
 
-    public void setTítuloMiniatura(String títuloMiniatura) {
-        this.títuloMiniatura = títuloMiniatura;
-    }
-
-    public Miniatura(int imgMiniatura, String títuloMiniatura) {
-        this.imgMiniatura = imgMiniatura;
-        this.títuloMiniatura = títuloMiniatura;
+    public void setTituloMiniatura(String tituloMiniatura) {
+        this.tituloMiniatura = tituloMiniatura;
     }
 }
-
