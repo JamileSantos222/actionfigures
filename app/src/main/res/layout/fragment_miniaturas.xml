@@ -8,15 +8,23 @@
     android:background="#F41010"
     tools:context=".MiniaturasFragment">
 
-    <!-- TODO: Update blank fragment layout -->
+    <!-- Título -->
     <TextView
-
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:text="Miniaturas"
         android:textColor="#FFFFFF"
         android:textSize="35sp"
-        android:textStyle="bold"/>
+        android:textStyle="bold" />
+
+    <!-- RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/idRecyclerViewMiniatura"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp"
+        android:padding="8dp"
+        android:clipToPadding="false"/>
 
 </LinearLayout>

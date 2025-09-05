@@ -23,7 +23,7 @@ public class MiniaturasFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_miniaturas, container, false);
 
-        idRecyclerViewMiniatura = view.findViewById(R.id.idRecyclerViewMiniatura);
+        idRecyclerViewMiniatura = view.findViewById(R.id.idCardViewMiniatura);
 
         lstMiniatura = new ArrayList<>();
         lstMiniatura.add(new Miniatura(R.drawable.muzan, "Muzan"));
