@@ -20,6 +20,7 @@ public class AcessoriosFragment extends Fragment {
 
         //vc vai codificar apartir daqui.
 
+
         return view;
     }
 }

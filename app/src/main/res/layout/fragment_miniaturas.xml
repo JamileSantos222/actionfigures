@@ -9,7 +9,10 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/idRecyclerViewMiniatura"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:paddingBottom="80dp"
+        android:clipToPadding="false"/>
+
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/idFABMiniatura"
@@ -18,9 +21,9 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_margin="34dp"
+        android:layout_margin="35dp"
         android:backgroundTint="#009688"
-        android:src="@drawable/tanjiroicon" />
+        android:src="@drawable/baseline_menu" />
 
 
 </RelativeLayout>

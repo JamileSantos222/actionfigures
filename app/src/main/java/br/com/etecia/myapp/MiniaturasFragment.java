@@ -1,7 +1,5 @@
 package br.com.etecia.myapp;
 
-import static br.com.etecia.myapp.R.id.idCardViewMiniatura;
-
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -25,7 +23,7 @@ public class MiniaturasFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_miniaturas, container, false);
 
-        idRecyclerViewMiniatura = view.findViewById(idCardViewMiniatura);
+        idRecyclerViewMiniatura = view.findViewById(R.id.idRecyclerViewMiniatura);
 
         lstMiniatura = new ArrayList<>();
         lstMiniatura.add(new Miniatura(R.drawable.muzan, "Muzan"));
